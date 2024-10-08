@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZP List Kshetra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container" id="main-container">
+    <h2>Atul parv</h2>
+    <div class="button-container">
+        <button class="campaign-btn" id="show-zp-list">Door 2 Door Campaign</button>
+        <button class="campaign-btn" id="show-yuva-campaign">Yuva Campaign</button>
+        <button class="campaign-btn" id="show-mahila-campaign">Mahila Campaign</button>
+        <button class="campaign-btn" id="show-covid-beneficiaries">Covid Beneficiaries</button>
+        <button class="campaign-btn" id="show-school-alumnis">School Alumnis</button>
+    </div>
+</div>
+
+<div class="container overlay" id="overlay-container">
+    <h2 id="overlay-heading"></h2>
+    <div class="search-container">
+        <input type="text" id="village-search" placeholder="Search for a ZP..." />
+    </div>
+    <div class="list-box">
+        <h3 id="overlay-list-heading" style="color: red;"></h3>
+        <ol id="overlay-list">
+            <li class="default-list"><a href="#" class="list-link">Varunji</a></li>
+            <li class="default-list"><a href="#" class="list-link">Wing</a></li>
+            <li class="default-list"><a href="#" class="list-link">Yelgaon</a></li>
+            <li class="default-list"><a href="#" class="list-link">Kale</a></li>
+            <li class="default-list"><a href="#" class="list-link">Karve</a></li>
+            <li class="default-list"><a href="#" class="list-link">Saidapur</a></li>
+            <li class="default-list"><a href="#" class="list-link">Malkapur</a></li>
+            <li class="default-list"><a href="#" class="list-link">Karad City</a></li>
+            <li class="default-list"><a href="#" class="list-link">Rethare BK</a></li>
+            <li class="school-alumnis-list"><a href="#" class="list-link">Sambhaji</a></li>
+            <li class="school-alumnis-list"><a href="#" class="list-link">KCT</a></li>
+        </ol>
+        <p id="not-found-message" style="color: red; display: none;">ZP not found</p>
+    </div>
+    <button class="close-overlay" id="close-overlay">Back</button>
+</div>
+
+<div class="container overlay detail-overlay" id="detail-overlay-container">
+    <h2 id="detail-overlay-heading"></h2>
+    <div class="detail-box">
+        <div class="detail-content">
+            <input id="detail-village-search" type="search" placeholder="Search villages...">
+            <p id="detail-not-found-message" style="color: red; display: none;">Village not found</p>
+            <div class="detail-header">
+                <div class="detail-column">VILLAGE NAME</div>
+                <div class="detail-column">PIN CODE</div>
+            </div>
+            <div id="detail-list"></div>
+        </div>
+    </div>
+    <button class="close-overlay" id="close-detail-overlay">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
